@@ -13,6 +13,8 @@ services:
       - DRONE_GOGS=true
       - DRONE_GOGS_URL=http://<hostname>:3000
       - DRONE_SECRET=INSERT_A_SECRET_STRING
+      - DRONE_GOGS_GIT_USERNAME=<username>
+      - DRONE_GOGS_GIT_PASSWORD=<password>
 
   drone-agent:
     image: drone/drone:0.5
